@@ -31,10 +31,8 @@ public class Speed {
 		return this.speedNo >= FORWARD_GREATER_NO;
 	}
 
-	public void printForwardString() {
-		if (this.isForwardable()) {
-			System.out.print("-");
-		}
+	public int getForwardCount() {
+		return this.isForwardable() ? 1 : 0;
 	}
 
 	public int getSpeedNo() {
