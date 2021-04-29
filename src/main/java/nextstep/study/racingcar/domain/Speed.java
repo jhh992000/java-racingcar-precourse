@@ -39,4 +39,8 @@ public class Speed {
 		return speedNo;
 	}
 
+	@Override
+	public String toString() {
+		return String.valueOf(speedNo);
+	}
 }
