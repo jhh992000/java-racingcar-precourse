@@ -20,21 +20,29 @@ public class Car {
 		return false;
 	}
 
-	public boolean goForward() {
+	public CarStatus goForward() {
 		return this.goForward(new Speed());
 	}
 
-	public boolean goForward(int speedNo) {
+	public CarStatus goForward(int speedNo) {
 		return this.goForward(new Speed(speedNo));
 	}
 
-	private boolean goForward(Speed speed) {
+	private CarStatus goForward(Speed speed) {
 		this.carSpeeds.add(speed);
-		return speed.isForwardable();
+		return speed.isForwardable() ? CarStatus.FORWARD : CarStatus.STOP;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 	public int getForwardCount() {
 		return this.carSpeeds.getForwardCount();
+	}
+
+	public int getForwardCount(int playIndex) {
+		return this.carSpeeds.getForwardCount(playIndex);
 	}
 
 }
