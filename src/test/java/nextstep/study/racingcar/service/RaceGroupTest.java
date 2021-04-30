@@ -50,7 +50,7 @@ public class RaceGroupTest {
 
 
 		int maxForwardCount = this.getMaxForwardCount(raceResult.getCars());
-		System.out.println("최대 전진 횟수 : "+maxForwardCount);
+		System.out.println("최대 전진 횟수 : " + maxForwardCount);
 
 		System.out.println();
 		System.out.println("--우승자 목록--");
