@@ -1,7 +1,5 @@
-package nextstep.study.racingcar.service;
+package nextstep.study.racingcar.domain;
 
-import nextstep.study.racingcar.domain.Car;
-import nextstep.study.racingcar.domain.RaceResult;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

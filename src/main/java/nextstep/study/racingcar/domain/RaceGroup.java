@@ -1,7 +1,4 @@
-package nextstep.study.racingcar.service;
-
-import nextstep.study.racingcar.domain.Car;
-import nextstep.study.racingcar.domain.RaceResult;
+package nextstep.study.racingcar.domain;
 
 import java.util.ArrayList;
 import java.util.List;

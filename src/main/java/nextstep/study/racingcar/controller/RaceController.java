@@ -1,7 +1,7 @@
 package nextstep.study.racingcar.controller;
 
+import nextstep.study.racingcar.domain.RaceGroup;
 import nextstep.study.racingcar.domain.RaceResult;
-import nextstep.study.racingcar.service.RaceGroup;
 import nextstep.study.racingcar.service.RaceInputService;
 import nextstep.study.racingcar.view.RaceView;
 
