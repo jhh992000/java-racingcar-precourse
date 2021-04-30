@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@DisplayName("자동차 속도 테스트")
 public class CarSpeedsTest {
 
 	@Test
