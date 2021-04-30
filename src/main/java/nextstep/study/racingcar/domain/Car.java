@@ -17,10 +17,10 @@ public class Car {
 	}
 
 	protected boolean validateCarName(String carName) {
-		if (carName == null || carName.length() == 0) {
+		if (carName == null || carName.trim().length() == 0) {
 			throw new IllegalArgumentException("자동차의 이름은 필수 입력항목입니다.");
 		}
-		if (carName.length() > 5) {
+		if (carName.trim().length() > 5) {
 			throw new IllegalArgumentException("자동차의 이름은 5자 이내로 입력하셔야 합니다.");
 		}
 		return false;
