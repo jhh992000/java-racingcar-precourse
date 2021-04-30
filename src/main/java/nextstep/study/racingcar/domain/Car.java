@@ -10,6 +10,12 @@ public class Car {
 		this.carSpeeds = new CarSpeeds();
 	}
 
+	public Car(String name, CarSpeeds carSpeeds) {
+		validateCarName(name);
+		this.name = name;
+		this.carSpeeds = carSpeeds;
+	}
+
 	protected boolean validateCarName(String carName) {
 		if (carName == null || carName.length() == 0) {
 			throw new IllegalArgumentException("자동차의 이름은 필수 입력항목입니다.");
@@ -41,7 +47,7 @@ public class Car {
 		return this.carSpeeds.getForwardCount();
 	}
 
-	public int getForwardCount(int playIndex) {
+	public int getForwardCountByPlayIndex(int playIndex) {
 		return this.carSpeeds.getForwardCount(playIndex);
 	}
 

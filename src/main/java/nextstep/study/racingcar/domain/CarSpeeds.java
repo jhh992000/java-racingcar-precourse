@@ -7,6 +7,18 @@ public class CarSpeeds {
 
 	private List<Speed> speeds = new ArrayList<>();
 
+	public CarSpeeds() {
+
+	}
+
+	public CarSpeeds(List<Speed> speeds) {
+		this.speeds = speeds;
+	}
+
+	public CarSpeeds(Speed speed) {
+		this.speeds.add(speed);
+	}
+
 	public void add(Speed speed) {
 		this.speeds.add(speed);
 	}
